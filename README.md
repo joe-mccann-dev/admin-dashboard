@@ -1,0 +1,1 @@
+This is the repository for replicating an admin dashboard using CSS Grid and Flexbox. Project specifications found [here](https://www.theodinproject.com/lessons/intermediate-html-and-css-admin-dashboard).
