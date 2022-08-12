@@ -206,31 +206,42 @@ button {
 /* BEGIN PROJECTS AND ANNOUNCEMENTS */
 
 
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 12px;
+}
 
 .projects {
-  grid-column: 1 / 2;
+  flex: 1;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 18px;
 }
 
 .project {
-  max-height: 300px;
+  min-height: 180px;
+  max-height: 220px;
+  max-width: 320px;
   background-color: brown;
   border-left: solid orange 8px;
   border-radius: 8px;
-  margin: 5px 10px;
 }
 
 .announcments-and-trending {
   grid-column: 2 / 3;
-  display: grid;
-  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin: 12px;
 }
 
 .announcements-container, .trending-container  {
-  height: 400px;
-  width: 300px;
+  flex: 1;
+  max-height: 320px;
+  height: 300px;
+  width: 240px;
   background-color: brown;
   border-radius: 8px;
 }
