@@ -19,7 +19,7 @@ body {
   height: 100vh;
   max-width: 100vw;
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 4fr;
 }
 
 /* BEGIN SIDEBAR */
@@ -202,5 +202,39 @@ button {
 }
 
 /* END HEADER */
+
+/* BEGIN PROJECTS AND ANNOUNCEMENTS */
+
+
+
+.projects {
+  grid-column: 1 / 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 15px;
+}
+
+.project {
+  max-height: 300px;
+  background-color: brown;
+  border-left: solid orange 8px;
+  border-radius: 8px;
+  margin: 5px 10px;
+}
+
+.announcments-and-trending {
+  grid-column: 2 / 3;
+  display: grid;
+  gap: 16px;
+}
+
+.announcements-container, .trending-container  {
+  height: 400px;
+  width: 300px;
+  background-color: brown;
+  border-radius: 8px;
+}
+
+/* END PROJECTS AND ANNOUNCMENTS */
 
 /* END MAIN */
