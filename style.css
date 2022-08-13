@@ -94,7 +94,6 @@ body {
   grid-column: 1 / 2;
   margin-left: 32px;
   display: grid;
-  gap: 24px;
 }
 
 .search {
@@ -197,8 +196,9 @@ button {
   background-color: turquoise;
   color: white;
   font-weight: 700;
-  padding: 8px 12px;
+  padding: 10px 32px;
   font-size: 1.6rem;
+  cursor: pointer;
 }
 
 /* END HEADER */
@@ -221,12 +221,25 @@ button {
 }
 
 .project {
+  display: grid;
+  align-items: center;
   min-height: 180px;
   max-height: 220px;
   max-width: 320px;
   background-color: brown;
   border-left: solid orange 8px;
   border-radius: 8px;
+  padding: 12px;
+}
+
+.project-description {
+  margin-top: 4px;
+}
+
+.project-actions {
+  display: flex;
+  gap: 24px;
+  justify-content: flex-end;
 }
 
 .announcments-and-trending {
