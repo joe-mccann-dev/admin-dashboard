@@ -211,14 +211,12 @@ input[type='search'] {
 }
 
 .action-icon {
-  /* zinc-800 */
   filter: var(--zinc-800-icon)
 }
 
 .notification-bell {
   height: 32px;
   width: 32px;
-  /* emerald-900 */
   filter: var(--emerald-900-icon);
 }
 
