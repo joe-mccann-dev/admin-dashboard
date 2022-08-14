@@ -185,6 +185,7 @@ input[type='search'] {
 .user-name {
   font-weight: 700;
   font-size: 1.8rem;
+  color: var(--emerald-900);
 }
 
 .action-buttons {
