@@ -272,12 +272,13 @@ input[type='search'] {
   flex: 1;
   max-height: 320px;
   height: 300px;
-  width: 240px;
+  width: 200px;
   background-color: brown;
   border-radius: 8px;
   display: grid;
   align-items: center;
   padding: 32px;
+  gap: 12px;
 }
 
 .announcement-title {
@@ -289,15 +290,51 @@ input[type='search'] {
   font-size: 1.2rem;
 }
 
-.announcement-content {
-  margin-bottom: 8px;
-}
-
 hr {
-  /* border-top: solid pink 1px; */
   border: none;
   height: 1px;
   background-color: grey;
+}
+
+.avatar-container {
+  height: 42px;
+  width: 42px;
+  background-color: grey;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trending {
+  display: grid;
+  gap: 18px;
+}
+
+.trending-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.trending-avatar {
+  height: 40px;
+  width: 40px;
+}
+
+.trending-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.user-handle {
+  font-size: 1.4rem;
+}
+
+.detail {
+  font-size: 1.3rem;
+  color: gray;
 }
 
 /* END PROJECTS AND ANNOUNCMENTS */
