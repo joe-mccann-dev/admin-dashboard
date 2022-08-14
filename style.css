@@ -5,6 +5,19 @@
   text-decoration: none;
 }
 
+/* tailwind color palettes: https://tailwindcss.com/docs/customizing-colors */
+:root {
+  --emerald-50: #ecfdf5;
+  --emerald-600: #059669;
+  --emerald-900: #064e3b;
+  --emerald-900-icon: invert(22%) sepia(10%) saturate(4293%) hue-rotate(118deg) brightness(97%) contrast(95%);;
+  --neutral-300: #e5e5e5;
+  --zinc-100: #f4f4f5;
+  --zinc-100-icon: invert(98%) sepia(54%) saturate(1158%) hue-rotate(196deg) brightness(111%) contrast(95%);
+  --zinc-800: #27272a;
+  --zinc-800-icon: invert(10%) sepia(6%) saturate(714%) hue-rotate(202deg) brightness(97%) contrast(86%)
+}
+
 html {
   font-size: 62.5%;
 }
@@ -13,6 +26,7 @@ body {
   font-family: 'Ubuntu', Arial, sans-serif;
   height: 100%;
   width: 100%;
+  color: var(--emerald-900);
 }
 
 .container {
@@ -26,18 +40,14 @@ body {
 
 .sidebar {
   font-weight: 700;
-  background-color: blue;
+  background-color: var(--emerald-600);
   display: grid;
   grid-template-rows: repeat(auto-fill, minmax(120px, 1fr));
-  color: white;
-}
-
-.sidebar a:visited {
-  color: white;
 }
 
 .logo-header {
-  font-size: 3.2rem;
+  font-size: 3rem;
+  color: var(--zinc-100);
 }
 
 .nav {
@@ -56,18 +66,25 @@ body {
   padding: 8px;
 }
 
-.nav-section-item a {
+.nav-link {
   font-size: 2rem;
+  color: var(--zinc-100);
+}
+
+.nav-link:visited {
+  color: var(--zinc-100);
 }
 
 .sidebar-icon {
   height: 28px;
   width: 28px;
+  filter: var(--zinc-100-icon)
 }
 
 .dashboard-icon {
   height: 48px;
   width: 48px;
+  filter: var(--zinc-100-icon)
 }
 
 /* END SIDEBAR */
@@ -78,7 +95,7 @@ body {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 4fr;
-  padding: 18px;
+  background-color: var(--neutral-300);
 }
 
 /* BEGIN HEADER */
@@ -87,7 +104,8 @@ body {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-column: 1 / 3;
-  
+  background-color: var(--emerald-50);
+  padding: 18px;
 }
 
 .header-left, .header-right {
@@ -117,7 +135,8 @@ body {
 input[type='search'] {
   width: 85%;
   height: 36px;
-  background-color: lightgrey;
+  background-color: var(--neutral-300);
+  color: var(--zinc-800);
   border: none;
   border-radius: 16px;
   padding: 4px 16px;
@@ -183,7 +202,7 @@ input[type='search'] {
   justify-content:center;
   border: none;
   border-radius: 32px;
-  background-color: turquoise;
+  background-color: var(--emerald-600);
   color: white;
   font-weight: 700;
   padding: 10px 32px;
@@ -191,9 +210,16 @@ input[type='search'] {
   cursor: pointer;
 }
 
+.action-icon {
+  /* zinc-800 */
+  filter: var(--zinc-800-icon)
+}
+
 .notification-bell {
   height: 32px;
   width: 32px;
+  /* emerald-900 */
+  filter: var(--emerald-900-icon);
 }
 
 .project-action {
@@ -204,7 +230,7 @@ input[type='search'] {
   cursor: pointer;
 }
 
-.profile-avatar {
+.profile-avatar-large {
   height: 72px;
   width: 72px;
   border-radius: 50%;
@@ -225,6 +251,7 @@ input[type='search'] {
   flex-direction: column;
   gap: 16px;
   margin: 12px;
+  padding: 16px;
 }
 
 .projects {
@@ -240,8 +267,8 @@ input[type='search'] {
   min-height: 100px;
   max-height: 220px;
   max-width: 320px;
-  background-color: brown;
-  border-left: solid orange 8px;
+  background-color: var(--emerald-50);
+  border-left: solid var(--emerald-600) 8px;
   border-radius: 8px;
   padding: 24px;
 }
@@ -266,6 +293,7 @@ input[type='search'] {
   flex-direction: column;
   gap: 18px;
   margin: 12px;
+  padding: 16px;
 }
 
 .announcements, .trending-container  {
@@ -273,7 +301,7 @@ input[type='search'] {
   max-height: 320px;
   height: 300px;
   width: 200px;
-  background-color: brown;
+  background-color: var(--emerald-50);
   border-radius: 8px;
   display: grid;
   align-items: center;
@@ -293,13 +321,13 @@ input[type='search'] {
 hr {
   border: none;
   height: 1px;
-  background-color: grey;
+  background-color: var(--neutral-300);
 }
 
 .avatar-container {
   height: 42px;
   width: 42px;
-  background-color: grey;
+  background-color: var(--neutral-300);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -317,9 +345,14 @@ hr {
   gap: 16px;
 }
 
-.trending-avatar {
+.this-profile-avatar, .trending-avatar {
   height: 40px;
   width: 40px;
+  border-radius: 50%;
+}
+
+.trending-avatar {
+  filter: invert(10%) sepia(6%) saturate(714%) hue-rotate(202deg) brightness(97%) contrast(86%);
 }
 
 .trending-detail {
@@ -334,7 +367,7 @@ hr {
 
 .detail {
   font-size: 1.3rem;
-  color: gray;
+  color: var(--zinc-800);
 }
 
 /* END PROJECTS AND ANNOUNCMENTS */
