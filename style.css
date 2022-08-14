@@ -162,7 +162,7 @@ input[type='search'] {
 }
 
 .user-handle {
-  font-size: 3.2rem;
+  font-size: 2.4rem;
 }
 
 .header-right {
@@ -360,7 +360,7 @@ hr {
   gap: 2px;
 }
 
-.user-handle {
+.trending-user-handle {
   font-size: 1.4rem;
 }
 
