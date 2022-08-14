@@ -17,49 +17,49 @@
     <div class="sidebar">
 
       <div class="logo">
-        <img src="assets/icons/clock-time-nine-outline.png" alt="" class="sidebar-icon">
+        <img src="assets/icons/dashboard.svg" alt="dashboard icon" class="sidebar-icon dashboard-icon">
         <h1 class="logo-header">Dashboard</h1>
       </div>
 
       <div class="nav">
         <div class="nav-section">
           <div class="nav-section-item">
-            <img src="assets/icons/clock-time-nine-outline.png" alt="" class="sidebar-icon">
+            <img src="assets/icons/home.svg" alt="home-icon" class="sidebar-icon">
             <a href="#" class="nav-link">Home</a>
           </div>
           <div class="nav-section-item">
-            <img src="assets/icons/clock-time-nine-outline.png" alt="" class="sidebar-icon">
+            <img src="assets/icons/card-account-details.svg" alt="profile icon" class="sidebar-icon">
             <a href="#" class="nav-link">Profile</a>
           </div>
           <div class="nav-section-item">
-            <img src="assets/icons/clock-time-nine-outline.png" alt="" class="sidebar-icon">
+            <img src="assets/icons/message.svg" alt="message bubble icon" class="sidebar-icon">
             <a href="#" class="nav-link">Messages</a>
           </div>
           <div class="nav-section-item">
-            <img src="assets/icons/clock-time-nine-outline.png" alt="" class="sidebar-icon">
+            <img src="assets/icons/history.svg" alt="history icon" class="sidebar-icon">
             <a href="#" class="nav-link">History</a>
           </div>
           <div class="nav-section-item">
-            <img src="assets/icons/clock-time-nine-outline.png" alt="" class="sidebar-icon">
+            <img src="assets/icons/task.svg" alt="tasks icon" class="sidebar-icon">
             <a href="#" class="nav-link">Tasks</a>
           </div>
           <div class="nav-section-item">
-            <img src="assets/icons/clock-time-nine-outline.png" alt="" class="sidebar-icon">
+            <img src="assets/icons/community.svg" alt="community icon" class="sidebar-icon">
             <a href="#" class="nav-link">Communities</a>
           </div>
         </div>
 
         <div class="nav-section">
           <div class="nav-section-item">
-            <img src="assets/icons/clock-time-nine-outline.png" alt="" class="sidebar-icon">
+            <img src="assets/icons/settings.svg" alt="settings icon" class="sidebar-icon">
             <a href="#">Settings</a>
           </div>
           <div class="nav-section-item">
-            <img src="assets/icons/clock-time-nine-outline.png" alt="" class="sidebar-icon">
+            <img src="assets/icons/support.svg" alt="support icon" class="sidebar-icon">
             <a href="">Support</a>
           </div>
           <div class="nav-section-item">
-            <img src="assets/icons/clock-time-nine-outline.png" alt="" class="sidebar-icon">
+            <img src="assets/icons/privacy.svg" alt="privacy icon" class="sidebar-icon">
             <a href="">Privacy</a>
           </div>
         </div>
@@ -74,7 +74,9 @@
             <input type="search" id="search" name="search">
           </div>
           <div class="header-greeting">
-            <div class="header-icon"></div>
+            <div>
+              <img src="assets/profile-pic.jpg" alt="profile-avatar" class="profile-avatar">
+            </div>
             <div class="greeting-container">
               <p class="greeting">Hi there,</p>
               <p class="user-handle">First Last (@first)</p>
@@ -84,18 +86,25 @@
         <div class="header-right">
           <div class="user-nav">
             <div class="user-nav-item">
-              <img src="assets/icons/bell-ring.svg" alt="notification-icon" class="notification-bell">
-            </div>
-            <div class="user-nav-item header-icon-small">
+              <a href="#">
+                <img src="assets/icons/bell-ring.svg" alt="notification-icon" class="notification-bell">
+              </a>
             </div>
             <div class="user-nav-item">
-              <p class="user-name">First Last</p>
+              <a href="#">
+                <img src="assets/profile-pic.jpg" alt="profile-avatar" class="profile-avatar-small">
+              </a>
+            </div>
+            <div class="user-nav-item">
+              <a href="#">
+                <p class="user-name">First Last</p>
+              </a>
             </div>
           </div>
           <div class="action-buttons">
-            <button>New</button>
-            <button>Upload</button>
-            <button>Share</button>
+            <button class="action-button">New</button>
+            <button class="action-button">Upload</button>
+            <button class="action-button">Share</button>
           </div>
         </div>
       </div>
@@ -111,51 +120,144 @@
               </p>
             </div>
             <div class="project-actions">
-              <img src="assets/icons/bell-ring.svg" alt="notification-icon" class="notification-bell">
-              <img src="assets/icons/bell-ring.svg" alt="notification-icon" class="notification-bell">
-              <img src="assets/icons/bell-ring.svg" alt="notification-icon" class="notification-bell">
+              <button class="project-action">
+                <img src="assets/icons/add-favorite.svg" alt="add favorite icon">
+              </button>
+              <button class="project-action">
+                <img src="assets/icons/eye-plus.svg" alt="add to watchlist icon">
+              </button>
+              <button class="project-action">
+                <img src="assets/icons/share.svg" alt="share icon">
+              </button>
             </div>
           </li>
-          <li class="project"></li>
-          <li class="project"></li>
-          <li class="project"></li>
-          <li class="project"></li>
-          <li class="project"></li>
-          <li class="project"></li>
-          <li class="project"></li>
-          <li class="project"></li>
+          <li class="project">
+            <div class="project-body">
+              <h2 class="project-title">Interesting Title</h2>
+              <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam alias
+                rerum nostrum ut quam? Excepturi blanditiis, aut nostrum.
+              </p>
+            </div>
+            <div class="project-actions">
+              <button class="project-action">
+                <img src="assets/icons/add-favorite.svg" alt="add favorite icon">
+              </button>
+              <button class="project-action">
+                <img src="assets/icons/eye-plus.svg" alt="add to watchlist icon">
+              </button>
+              <button class="project-action">
+                <img src="assets/icons/share.svg" alt="share icon">
+              </button>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project-body">
+              <h2 class="project-title">Interesting Title</h2>
+              <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam alias
+                rerum nostrum ut quam? Excepturi blanditiis, aut nostrum.
+              </p>
+            </div>
+            <div class="project-actions">
+              <button class="project-action">
+                <img src="assets/icons/add-favorite.svg" alt="add favorite icon">
+              </button>
+              <button class="project-action">
+                <img src="assets/icons/eye-plus.svg" alt="add to watchlist icon">
+              </button>
+              <button class="project-action">
+                <img src="assets/icons/share.svg" alt="share icon">
+              </button>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project-body">
+              <h2 class="project-title">Interesting Title</h2>
+              <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam alias
+                rerum nostrum ut quam? Excepturi blanditiis, aut nostrum.
+              </p>
+            </div>
+            <div class="project-actions">
+              <button class="project-action">
+                <img src="assets/icons/add-favorite.svg" alt="add favorite icon">
+              </button>
+              <button class="project-action">
+                <img src="assets/icons/eye-plus.svg" alt="add to watchlist icon">
+              </button>
+              <button class="project-action">
+                <img src="assets/icons/share.svg" alt="share icon">
+              </button>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project-body">
+              <h2 class="project-title">Interesting Title</h2>
+              <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam alias
+                rerum nostrum ut quam? Excepturi blanditiis, aut nostrum.
+              </p>
+            </div>
+            <div class="project-actions">
+              <button class="project-action">
+                <img src="assets/icons/add-favorite.svg" alt="add favorite icon">
+              </button>
+              <button class="project-action">
+                <img src="assets/icons/eye-plus.svg" alt="add to watchlist icon">
+              </button>
+              <button class="project-action">
+                <img src="assets/icons/share.svg" alt="share icon">
+              </button>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project-body">
+              <h2 class="project-title">Interesting Title</h2>
+              <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam alias
+                rerum nostrum ut quam? Excepturi blanditiis, aut nostrum.
+              </p>
+            </div>
+            <div class="project-actions">
+              <button class="project-action">
+                <img src="assets/icons/add-favorite.svg" alt="add favorite icon">
+              </button>
+              <button class="project-action">
+                <img src="assets/icons/eye-plus.svg" alt="add to watchlist icon">
+              </button>
+              <button class="project-action">
+                <img src="assets/icons/share.svg" alt="share icon">
+              </button>
+            </div>
+          </li>
         </ul>
       </div>
 
       <div class="announcments-and-trending">
         <h1>Announcements</h1>
         <ul class="announcements">
-            <li class="announcement">
-              <div class="announcement-body">
-                <h3 class="announcement-title">First Announcement</h3>
-                <p class="announcement-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam alias
-                  rerum nostrum ut quam? Excepturi blanditiis. . .
-                </p>
-              </div>
-            </li>
-            <hr>
-            <li class="announcement">
-              <div class="announcement-body">
-                <h3 class="announcement-title">Second Announcement</h3>
-                <p class="announcement-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam alias
-                  rerum nostrum ut quam? Excepturi blanditiis. . .
-                </p>
-              </div>
-            </li>
-            <hr>
-            <li class="announcement">
-              <div class="announcement-body">
-                <h3 class="announcement-title">Third Announcement</h3>
-                <p class="announcement-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam alias
-                  rerum nostrum ut quam? Excepturi blanditiis. . .
-                </p>
-              </div>
-            </li>
+          <li class="announcement">
+            <div class="announcement-body">
+              <h3 class="announcement-title">First Announcement</h3>
+              <p class="announcement-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam alias
+                rerum nostrum ut quam? Excepturi blanditiis. . .
+              </p>
+            </div>
+          </li>
+          <hr>
+          <li class="announcement">
+            <div class="announcement-body">
+              <h3 class="announcement-title">Second Announcement</h3>
+              <p class="announcement-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam alias
+                rerum nostrum ut quam? Excepturi blanditiis. . .
+              </p>
+            </div>
+          </li>
+          <hr>
+          <li class="announcement">
+            <div class="announcement-body">
+              <h3 class="announcement-title">Third Announcement</h3>
+              <p class="announcement-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam alias
+                rerum nostrum ut quam? Excepturi blanditiis. . .
+              </p>
+            </div>
+          </li>
         </ul>
         <h1>Trending</h1>
         <div class="trending-container">

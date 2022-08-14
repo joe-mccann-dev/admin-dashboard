@@ -65,6 +65,11 @@ body {
   width: 28px;
 }
 
+.dashboard-icon {
+  height: 48px;
+  width: 48px;
+}
+
 /* END SIDEBAR */
 
 /* BEGIN MAIN */
@@ -154,6 +159,15 @@ input[type='search'] {
   align-items: center;
 }
 
+.user-nav a:visited {
+  color: inherit;
+}
+
+.user-name {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
 .action-buttons {
   display: grid;
   grid-column: 1 / 4;
@@ -162,31 +176,7 @@ input[type='search'] {
   justify-items: end;
 }
 
-.header-icon {
-  background-color: orangered;
-  height: 72px;
-  width: 72px;
-  border-radius: 50%;
-}
-
-.notification-bell {
-  height: 32px;
-  width: 32px;
-}
-
-.header-icon-small {
-  height: 48px;
-  width: 48px;
-  border-radius: 50%;
-  background-color: orangered;
-}
-
-.user-name {
-  font-weight: 700;
-  font-size: 1.8rem;
-}
-
-button {
+.action-button {
   display:flex;
   width: 96px;
   align-items:center;
@@ -201,6 +191,30 @@ button {
   cursor: pointer;
 }
 
+.notification-bell {
+  height: 32px;
+  width: 32px;
+}
+
+.project-action {
+  height: 24px;
+  width: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.profile-avatar {
+  height: 72px;
+  width: 72px;
+  border-radius: 50%;
+}
+
+.profile-avatar-small {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+}
 /* END HEADER */
 
 /* BEGIN PROJECTS AND ANNOUNCEMENTS */
@@ -223,7 +237,7 @@ button {
 .project {
   display: grid;
   align-items: center;
-  min-height: 180px;
+  min-height: 100px;
   max-height: 220px;
   max-width: 320px;
   background-color: brown;
